@@ -4,8 +4,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://burnworks.github.io',
   base: '/details-accordion-ui-sample',
   trailingSlash: "always",
-  outDir: './docs',
   integrations: [tailwind()]
 });
