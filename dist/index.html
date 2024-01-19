@@ -1,0 +1,504 @@
+<!DOCTYPE html><html lang="ja" class="scroll-smooth"> <head><meta charset="UTF-8"><title>details 要素を使用したアコーディオン UI の実装サンプル</title><meta name="description" content="HTML の details 要素を使用したアコーディオン UI の実装サンプルを紹介しています。"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/_astro/index.PLH1_9jv.css" /></head> <body class="font-body flex flex-col min-h-dvh text-gray-900">  <header class="text-center py-6 px-4 bg-gray-900 text-white"> <h1 class="font-bold text-lg">details 要素を使用したアコーディオン UI の実装サンプル</h1> </header> <main class="pb-24"> <div class="bg-white px-4 py-24" id="sample-01" data-astro-cid-qwu7zaxi> <div class="mx-auto max-w-7xl" data-astro-cid-qwu7zaxi> <div class="details-sample-01" data-astro-cid-qwu7zaxi> <h2 class="details-sample-header" data-astro-cid-qwu7zaxi>サンプル 01</h2> <div class="details-wrap" data-astro-cid-qwu7zaxi> <details data-astro-cid-qwu7zaxi> <summary data-astro-cid-qwu7zaxi> <span class="summary-text" data-astro-cid-qwu7zaxi> よくある質問と答え（FAQ）のようなコンテンツでよくみるアコーディオン UI のサンプル </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-qwu7zaxi> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-qwu7zaxi></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-qwu7zaxi></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-qwu7zaxi><p>質問に対してここに答えを入れるイメージ。リストされている質問の数がとても多い場合などには、答え部分を閉じておくことで、質問を一覧できていいかもしれないけど、項目が少ないならあんまり閉じておく意味はないかもね。</p></div> </details><details data-astro-cid-qwu7zaxi> <summary data-astro-cid-qwu7zaxi> <span class="summary-text" data-astro-cid-qwu7zaxi> 今一番欲しいものは何ですか？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-qwu7zaxi> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-qwu7zaxi></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-qwu7zaxi></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-qwu7zaxi><p>税引き後金額で5000兆円欲しいけど、妥協して10億円でもいい。</p></div> </details><details data-astro-cid-qwu7zaxi> <summary data-astro-cid-qwu7zaxi> <span class="summary-text" data-astro-cid-qwu7zaxi> 好きな食べ物は何ですか？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-qwu7zaxi> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-qwu7zaxi></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-qwu7zaxi></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-qwu7zaxi><p>グミが好きです。でもゼリーの方がもっと好きです。</p></div> </details><details data-astro-cid-qwu7zaxi> <summary data-astro-cid-qwu7zaxi> <span class="summary-text" data-astro-cid-qwu7zaxi> 1つの項目を開いたら、他の項目は閉じてほしいんだけど </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-qwu7zaxi> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-qwu7zaxi></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-qwu7zaxi></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-qwu7zaxi><p>name 属性を使うとできるよ。<a href='#sample-02'>サンプル 02</a> をみてね。でも Firefox は今のところ対応していないよ。</p></div> </details><details data-astro-cid-qwu7zaxi> <summary data-astro-cid-qwu7zaxi> <span class="summary-text" data-astro-cid-qwu7zaxi> 最初から開いておくことはできないの？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-qwu7zaxi> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-qwu7zaxi></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-qwu7zaxi></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-qwu7zaxi><p>details 要素に open 属性をつけると、初期状態が開いた状態になるよ。</p></div> </details><details data-astro-cid-qwu7zaxi> <summary data-astro-cid-qwu7zaxi> <span class="summary-text" data-astro-cid-qwu7zaxi> アクセシビリティ的には大丈夫なの？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-qwu7zaxi> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-qwu7zaxi></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-qwu7zaxi> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-qwu7zaxi></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-qwu7zaxi><p>details 要素で実装しておけば基本的には大丈夫だから気にすんな。下手に JavaScript で実装する方がダルいよ。</p></div> </details> </div> </div> </div> </div> <div class="max-w-5xl mx-auto p-6 bg-gray-50/80 rounded-lg"> <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3> <details> <summary class="py-4 font-bold text-lg">HTML</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-html prettyprint linenums"><code>&lt;div class=&quot;details-sample-01&quot;&gt;
+    &lt;h2 class=&quot;details-sample-header&quot;&gt;サンプル 01&lt;/h2&gt;
+    &lt;div class=&quot;details-wrap&quot;&gt;
+        &lt;!--↓ここからがひとつのブロック↓--&gt;
+        &lt;details&gt;
+            &lt;summary&gt;
+                &lt;span class=&quot;summary-text&quot;&gt;よくある質問と答え（FAQ）のようなコンテンツでよくみるアコーディオン UI のサンプル&lt;/span&gt;
+                &lt;span class=&quot;summary-icon&quot; aria-hidden=&quot;true&quot;&gt;
+                    &lt;svg class=&quot;open-icon&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot;&gt;
+                        &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;M12 6v12m6-6H6&quot; /&gt;
+                    &lt;/svg&gt;
+                    &lt;svg class=&quot;close-icon&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot;&gt;
+                        &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;M18 12H6&quot; /&gt;
+                    &lt;/svg&gt;
+                &lt;/span&gt;
+            &lt;/summary&gt;
+            &lt;div class=&quot;details-text&quot;&gt;
+                &lt;p&gt;質問に対してここに答えを入れるイメージ。リストされている質問の数がとても多い場合などには、答え部分を閉じておくことで、質問を一覧できていいかもしれないけど、項目が少ないならあんまり閉じておく意味はないかもね。&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/details&gt;
+        &lt;!--↑ここまでがひとつのブロック↑--&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre> </div> </details> <details> <summary class="py-4 font-bold text-lg">CSS</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-css prettyprint linenums"><code>/*---
+下記 CSS はあくまでサンプルです。
+他のCSSやブラウザの標準スタイルとの関係で調整が必要かもしれません
+---*/
+
+.details-sample-01 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+}
+
+.details-sample-01 &gt; :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-01 .details-sample-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(17 24 39 / 1);
+}
+
+.details-sample-01 .details-wrap &gt; :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-01 .details-wrap {
+    margin-top: 2.5rem;
+}
+
+.details-sample-01 details {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.details-sample-01 details summary {
+    box-sizing: border-box;
+    color: rgb(17 24 39 / 1);
+	display: flex;
+	width: 100%;
+	list-style-type: none;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.details-sample-01 details .summary-text {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.details-sample-01 details summary &gt; :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.5rem;
+}
+
+.details-sample-01 details .summary-icon {
+	display: flex;
+	height: 1.5rem;
+	flex-shrink: 0;
+	align-items: center;
+	color: rgb(75 85 99 / 1);
+}
+
+.details-sample-01 details .summary-icon .open-icon {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.details-sample-01 details .summary-icon .close-icon {
+    display: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.details-sample-01 details[open] .summary-icon .open-icon {
+    display: none;
+}
+
+.details-sample-01 details[open] .summary-icon .close-icon {
+    display: block;
+}
+
+.details-sample-01 details .details-text {
+    padding-right: 3rem;
+    color: rgb(55 65 81 / 1);
+	margin-top: 1.5rem;
+}
+
+.details-sample-01 details .details-text p {
+	margin: 0;
+}</code></pre> </div> </details> </div>  <hr class="mt-24"> <div class="bg-white px-4 py-24" id="sample-02" data-astro-cid-ihnuyt2k> <div class="mx-auto max-w-7xl" data-astro-cid-ihnuyt2k> <div class="details-sample-02" data-astro-cid-ihnuyt2k> <h2 class="details-sample-header" data-astro-cid-ihnuyt2k>サンプル 02 （排他的動作）</h2> <div class="details-wrap" data-astro-cid-ihnuyt2k> <details name="sample-02" data-astro-cid-ihnuyt2k> <summary class="" data-astro-cid-ihnuyt2k> <span class="summary-text" data-astro-cid-ihnuyt2k> よくある質問と答え（FAQ）のようなコンテンツでよくみるアコーディオン UI のサンプル。 </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-ihnuyt2k> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-ihnuyt2k></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-ihnuyt2k></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-ihnuyt2k><p>質問に対してここに答えを入れるイメージ。リストされている質問の数がとても多い場合などには、答え部分を閉じておくことで、質問を一覧できていいかもしれないけど、項目が少ないならあんまり閉じておく意味はないかもね。</p></div> </details><details name="sample-02" data-astro-cid-ihnuyt2k> <summary class="" data-astro-cid-ihnuyt2k> <span class="summary-text" data-astro-cid-ihnuyt2k> 今一番欲しいものは何ですか？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-ihnuyt2k> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-ihnuyt2k></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-ihnuyt2k></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-ihnuyt2k><p>税引き後金額で5000兆円欲しいけど、妥協して10億円でもいい。</p></div> </details><details name="sample-02" data-astro-cid-ihnuyt2k> <summary class="" data-astro-cid-ihnuyt2k> <span class="summary-text" data-astro-cid-ihnuyt2k> 好きな食べ物は何ですか？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-ihnuyt2k> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-ihnuyt2k></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-ihnuyt2k></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-ihnuyt2k><p>グミが好きです。でもゼリーの方がもっと好きです。</p></div> </details><details name="sample-02" data-astro-cid-ihnuyt2k> <summary class="" data-astro-cid-ihnuyt2k> <span class="summary-text" data-astro-cid-ihnuyt2k> 1つの項目を開いても、他の項目は閉じないようにしたいんだけど。 </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-ihnuyt2k> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-ihnuyt2k></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-ihnuyt2k> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-ihnuyt2k></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-ihnuyt2k><p>details 要素に付いている name 属性を削除しましょう。<a href='#sample-01'>サンプル 01</a> をみてね。</p></div> </details> </div> </div> </div> </div> <div class="max-w-5xl mx-auto p-6 bg-gray-50/80 rounded-lg"> <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3> <details> <summary class="py-4 font-bold text-lg">HTML</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-html prettyprint linenums"><code>&lt;div class=&quot;details-sample-02&quot;&gt;
+    &lt;h2 class=&quot;details-sample-header&quot;&gt;サンプル 02&lt;/h2&gt;
+    &lt;div class=&quot;details-wrap&quot;&gt;
+        &lt;!--↓ここからがひとつのブロック↓--&gt;
+        &lt;details name=&quot;sample-02&quot;&gt;
+            &lt;summary&gt;
+                &lt;span class=&quot;summary-text&quot;&gt;よくある質問と答え（FAQ）のようなコンテンツでよくみるアコーディオン UI のサンプル&lt;/span&gt;
+                &lt;span class=&quot;summary-icon&quot; aria-hidden=&quot;true&quot;&gt;
+                    &lt;svg class=&quot;open-icon&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot;&gt;
+                        &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;M12 6v12m6-6H6&quot; /&gt;
+                    &lt;/svg&gt;
+                    &lt;svg class=&quot;close-icon&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot;&gt;
+                        &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;M18 12H6&quot; /&gt;
+                    &lt;/svg&gt;
+                &lt;/span&gt;
+            &lt;/summary&gt;
+            &lt;div class=&quot;details-text&quot;&gt;
+                &lt;p&gt;質問に対してここに答えを入れるイメージ。リストされている質問の数がとても多い場合などには、答え部分を閉じておくことで、質問を一覧できていいかもしれないけど、項目が少ないならあんまり閉じておく意味はないかもね。&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/details&gt;
+        &lt;!--↑ここまでがひとつのブロック↑--&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre> </div> </details> <details> <summary class="py-4 font-bold text-lg">CSS</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-css prettyprint linenums"><code>/*---
+下記 CSS はあくまでサンプルです。
+他のCSSやブラウザの標準スタイルとの関係で調整が必要かもしれません
+---*/
+
+.details-sample-02 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+}
+
+.details-sample-02 &gt; :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-02 .details-sample-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(17 24 39 / 1);
+}
+
+.details-sample-02 .details-wrap &gt; :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-02 .details-wrap {
+    margin-top: 2.5rem;
+}
+
+.details-sample-02 details {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.details-sample-02 details summary {
+    box-sizing: border-box;
+    color: rgb(17 24 39 / 1);
+	display: flex;
+	width: 100%;
+	list-style-type: none;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.details-sample-02 details .summary-text {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.details-sample-02 details summary &gt; :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.5rem;
+}
+
+.details-sample-02 details .summary-icon {
+	display: flex;
+	height: 1.5rem;
+	flex-shrink: 0;
+	align-items: center;
+	color: rgb(75 85 99 / 1);
+}
+
+.details-sample-02 details .summary-icon .open-icon {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.details-sample-02 details .summary-icon .close-icon {
+    display: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.details-sample-01 details[open] .summary-icon .open-icon {
+    display: none;
+}
+
+.details-sample-01 details[open] .summary-icon .close-icon {
+    display: block;
+}
+
+.details-sample-02 details .details-text {
+    padding-right: 3rem;
+    color: rgb(55 65 81 / 1);
+	margin-top: 1.5rem;
+}
+
+.details-sample-02 details .details-text p {
+	margin: 0;
+}</code></pre> </div> </details> </div>  <hr class="mt-24"> <div class="bg-white px-4 py-24" id="sample-03" data-astro-cid-4xztitox> <div class="mx-auto max-w-7xl" data-astro-cid-4xztitox> <div class="details-sample-03" data-astro-cid-4xztitox> <h2 class="details-sample-header" data-astro-cid-4xztitox>サンプル 03 （アイコンが回転）</h2> <div class="details-wrap" data-astro-cid-4xztitox> <details data-astro-cid-4xztitox> <summary class="" data-astro-cid-4xztitox> <span class="summary-text" data-astro-cid-4xztitox> よくある質問と答え（FAQ）のようなコンテンツでよくみるアコーディオン UI のサンプル。 </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-4xztitox> <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-4xztitox> <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" data-astro-cid-4xztitox></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-4xztitox><p>質問に対してここに答えを入れるイメージ。リストされている質問の数がとても多い場合などには、答え部分を閉じておくことで、質問を一覧できていいかもしれないけど、項目が少ないならあんまり閉じておく意味はないかもね。</p></div> </details><details data-astro-cid-4xztitox> <summary class="" data-astro-cid-4xztitox> <span class="summary-text" data-astro-cid-4xztitox> 今一番欲しいものは何ですか？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-4xztitox> <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-4xztitox> <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" data-astro-cid-4xztitox></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-4xztitox><p>税引き後金額で5000兆円欲しいけど、妥協して10億円でもいい。</p></div> </details><details data-astro-cid-4xztitox> <summary class="" data-astro-cid-4xztitox> <span class="summary-text" data-astro-cid-4xztitox> 好きな食べ物は何ですか？ </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-4xztitox> <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-4xztitox> <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" data-astro-cid-4xztitox></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-4xztitox><p>グミが好きです。でもゼリーの方がもっと好きです。</p></div> </details> </div> </div> </div> </div> <div class="max-w-5xl mx-auto p-6 bg-gray-50/80 rounded-lg"> <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3> <details> <summary class="py-4 font-bold text-lg">HTML</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-html prettyprint linenums"><code>&lt;div class=&quot;details-sample-03&quot;&gt;
+    &lt;h2 class=&quot;details-sample-header&quot;&gt;サンプル 03&lt;/h2&gt;
+    &lt;div class=&quot;details-wrap&quot;&gt;
+        &lt;!--↓ここからがひとつのブロック↓--&gt;
+        &lt;details&gt;
+            &lt;summary&gt;
+                &lt;span class=&quot;summary-text&quot;&gt;よくある質問と答え（FAQ）のようなコンテンツでよくみるアコーディオン UI のサンプル&lt;/span&gt;
+                &lt;span class=&quot;summary-icon&quot; aria-hidden=&quot;true&quot;&gt;
+                    &lt;svg class=&quot;arrow-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot; &gt;
+                        &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;m19.5 8.25-7.5 7.5-7.5-7.5&quot; /&gt;
+                    &lt;/svg&gt;
+                &lt;/span&gt;
+            &lt;/summary&gt;
+            &lt;div class=&quot;details-text&quot;&gt;
+                &lt;p&gt;質問に対してここに答えを入れるイメージ。リストされている質問の数がとても多い場合などには、答え部分を閉じておくことで、質問を一覧できていいかもしれないけど、項目が少ないならあんまり閉じておく意味はないかもね。&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/details&gt;
+        &lt;!--↑ここまでがひとつのブロック↑--&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre> </div> </details> <details> <summary class="py-4 font-bold text-lg">CSS</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-css prettyprint linenums"><code>/*---
+下記 CSS はあくまでサンプルです。
+他のCSSやブラウザの標準スタイルとの関係で調整が必要かもしれません
+---*/
+
+.details-sample-03 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+}
+
+.details-sample-03 &gt; :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-03 .details-sample-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(17 24 39 / 1);
+}
+
+.details-sample-03 .details-wrap &gt; :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-03 .details-wrap {
+    margin-top: 2.5rem;
+}
+
+.details-sample-03 details {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.details-sample-03 details summary {
+    box-sizing: border-box;
+    color: rgb(17 24 39 / 1);
+	display: flex;
+	width: 100%;
+	list-style-type: none;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.details-sample-03 details .summary-text {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.details-sample-03 details summary &gt; :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.5rem;
+}
+
+.details-sample-03 details .summary-icon {
+	display: flex;
+	height: 1.5rem;
+	flex-shrink: 0;
+	align-items: center;
+	color: rgb(75 85 99 / 1);
+}
+
+.details-sample-03 details .summary-icon .arrow-icon {
+	height: 1.5rem;
+	width: 1.5rem;
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.details-sample-03 details[open] .summary-icon .arrow-icon {
+	transform: rotate(180deg);
+}
+
+.details-sample-03 details .details-text {
+    padding-right: 3rem;
+    color: rgb(55 65 81 / 1);
+	margin-top: 1.5rem;
+}
+
+.details-sample-03 details .details-text p {
+	margin: 0;
+}</code></pre> </div> </details> </div>  <hr class="mt-24"> <div class="bg-white px-4 py-24" id="sample-04" data-astro-cid-t36mzxp5> <div class="mx-auto max-w-7xl" data-astro-cid-t36mzxp5> <div class="details-sample-04" data-astro-cid-t36mzxp5> <h2 class="details-sample-header" data-astro-cid-t36mzxp5>サンプル 04 （メニュー的なもの）</h2> <div class="details-wrap" data-astro-cid-t36mzxp5> <details data-astro-cid-t36mzxp5> <summary data-astro-cid-t36mzxp5> <span class="summary-text" data-astro-cid-t36mzxp5> サービス案内 </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-t36mzxp5> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-t36mzxp5></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-t36mzxp5></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-t36mzxp5> <ul data-astro-cid-t36mzxp5> <li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li> </ul> </div> </details><details data-astro-cid-t36mzxp5> <summary data-astro-cid-t36mzxp5> <span class="summary-text" data-astro-cid-t36mzxp5> 会社概要 </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-t36mzxp5> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-t36mzxp5></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-t36mzxp5></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-t36mzxp5> <ul data-astro-cid-t36mzxp5> <li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li> </ul> </div> </details><details data-astro-cid-t36mzxp5> <summary data-astro-cid-t36mzxp5> <span class="summary-text" data-astro-cid-t36mzxp5> 採用情報 </span> <span class="summary-icon" aria-hidden="true" data-astro-cid-t36mzxp5> <svg class="open-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" data-astro-cid-t36mzxp5></path> </svg> <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" data-astro-cid-t36mzxp5></path> </svg> </span> </summary> <div class="details-text" data-astro-cid-t36mzxp5> <ul data-astro-cid-t36mzxp5> <li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li><li data-astro-cid-t36mzxp5> <a href="#" data-astro-cid-t36mzxp5> サブメニュー的なもの <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-t36mzxp5> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" data-astro-cid-t36mzxp5></path> </svg> </a> </li> </ul> </div> </details> </div> </div> </div> </div> <div class="max-w-5xl mx-auto p-6 bg-gray-50/80 rounded-lg"> <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3> <details> <summary class="py-4 font-bold text-lg">HTML</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-html prettyprint linenums"><code>&lt;div class=&quot;details-sample-04&quot;&gt;
+    &lt;h2 class=&quot;details-sample-header&quot;&gt;サンプル 04&lt;/h2&gt;
+    &lt;div class=&quot;details-wrap&quot;&gt;
+        &lt;!--↓ここからがひとつのブロック↓--&gt;
+        &lt;details&gt;
+            &lt;summary&gt;
+                &lt;span class=&quot;summary-text&quot;&gt;
+                    サービス案内    
+                &lt;/span&gt;
+                &lt;span class=&quot;summary-icon&quot; aria-hidden=&quot;true&quot;&gt;
+                    &lt;svg class=&quot;open-icon&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot;&gt;
+                        &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;M12 6v12m6-6H6&quot; /&gt;
+                    &lt;/svg&gt;
+                    &lt;svg class=&quot;close-icon&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot;&gt;
+                        &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;M18 12H6&quot; /&gt;
+                    &lt;/svg&gt;
+                &lt;/span&gt;
+            &lt;/summary&gt;
+            &lt;div class=&quot;details-text&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            サブメニュー的なもの
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot; aria-hidden=&quot;true&quot;&gt;
+                                &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;m8.25 4.5 7.5 7.5-7.5 7.5&quot; /&gt;
+                            &lt;/svg&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            サブメニュー的なもの
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;currentColor&quot; aria-hidden=&quot;true&quot;&gt;
+                                &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; d=&quot;m8.25 4.5 7.5 7.5-7.5 7.5&quot; /&gt;
+                            &lt;/svg&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/details&gt;
+        &lt;!--↑ここまでがひとつのブロック↑--&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre> </div> </details> <details> <summary class="py-4 font-bold text-lg">CSS</summary> <div class="prose max-w-none"> <pre tabindex="0" class="lang-css prettyprint linenums"><code>/*---
+下記 CSS はあくまでサンプルです。
+他のCSSやブラウザの標準スタイルとの関係で調整が必要かもしれません
+---*/
+
+.details-sample-04 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+}
+
+.details-sample-04 .details-sample-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(17 24 39 / 1);
+}
+
+.details-sample-04 .details-wrap &gt; :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-04 .details-wrap {
+    margin-top: 2.5rem;
+	border-radius: 0.5rem;
+    border-style: solid;
+	border-width: 1px;
+	border-color: rgb(17 24 39 / 0.1);
+}
+
+.details-sample-04 details {
+    padding: 0;
+    margin: 0;
+}
+
+.details-sample-04 details summary {
+    box-sizing: border-box;
+	padding: 1.5rem;
+	color: rgb(17 24 39 / 1);
+	display: flex;
+	width: 100%;
+	list-style-type: none;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.details-sample-04 details .summary-text {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.details-sample-04 details summary &gt; :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.5rem;
+}
+
+.details-sample-04 details .summary-icon {
+	display: flex;
+	height: 1.5rem;
+	flex-shrink: 0;
+	align-items: center;
+	color: rgb(75 85 99 / 1);
+}
+
+.details-sample-04 details .summary-icon .open-icon {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.details-sample-04 details .summary-icon .close-icon {
+    display: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.details-sample-04 details[open] .summary-icon .open-icon {
+    display: none;
+}
+
+.details-sample-04 details[open] .summary-icon .close-icon {
+    display: block;
+}
+
+.details-sample-04 details .details-text {
+	padding-bottom: 1.5rem;
+	color: rgb(55 65 81 / 1);
+}
+
+.details-sample-04 details .details-text ul {
+    padding: 0;
+    margin: 0;
+	list-style-type: none;
+}
+
+.details-sample-04 details .details-text ul li a {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	text-decoration-line: none;
+	transition-property: background-color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.details-sample-04 details .details-text ul li a {
+	color: rgb(17 24 39 / 1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.details-sample-04 details .details-text ul li a:hover {
+	background-color: rgb(249 250 251 / 0.8);
+}
+
+.details-sample-04 details .details-text ul li svg {
+	height: 1rem;
+	width: 1.5rem;
+	flex-shrink: 0;
+}</code></pre> </div> </details> </div>  </main> <footer class="mt-auto text-center py-10 px-4 bg-gray-50 text-gray-600"> <address class="not-italic"> <small class="text-sm">by <a class="underline hover:no-underline" href="https://twitter.com/burnworks" target="_blank">@burnworks</a></small> </address> </footer> <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sons-of-obsidian"></script>  </body></html>

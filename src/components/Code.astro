@@ -1,0 +1,23 @@
+---
+interface Props {
+	html: string;
+	css: string;
+}
+
+const { html , css } = Astro.props;
+---
+<div class="max-w-5xl mx-auto p-6 bg-gray-50/80 rounded-lg">
+    <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3>
+    <details>
+        <summary class="py-4 font-bold text-lg">HTML</summary>
+        <div class="prose max-w-none">
+            <pre tabindex="0" class="lang-html prettyprint linenums"><code set:text={html} /></pre>
+        </div>
+    </details>
+    <details>
+        <summary class="py-4 font-bold text-lg">CSS</summary>
+        <div class="prose max-w-none">
+            <pre tabindex="0" class="lang-css prettyprint linenums"><code set:text={css} /></pre>
+        </div>
+    </details>
+</div>

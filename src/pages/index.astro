@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import Sample01 from '../components/Sample01.astro';
+import Sample02 from '../components/Sample02.astro';
+import Sample03 from '../components/Sample03.astro';
+import Sample04 from '../components/Sample04.astro';
+
+const title = "details 要素を使用したアコーディオン UI の実装サンプル";
+const description = "HTML の details 要素を使用したアコーディオン UI の実装サンプルを紹介しています。"
+---
+
+<Layout title={title} description={description}>
+	<Header title={title} />
+	<main class="pb-24">
+		<Sample01 />
+		<hr class="mt-24" />
+		<Sample02 />
+		<hr class="mt-24" />
+		<Sample03 />
+		<hr class="mt-24" />
+		<Sample04 />
+	</main>
+	<Footer />
+	<script is:inline src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+</Layout>
