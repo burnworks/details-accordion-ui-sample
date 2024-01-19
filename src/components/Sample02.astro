@@ -55,26 +55,23 @@ const css = `/*---
     max-width: 64rem;
 }
 
-.details-sample-02 > :not([hidden]) ~ :not([hidden]) {
-	border-top-width: 1px;
-    border-top-style: solid;
-	border-color: rgb(17 24 39 / 0.1);
-}
-
 .details-sample-02 .details-sample-header {
     font-size: 1.5rem;
     font-weight: 700;
     color: rgb(17 24 39 / 1);
 }
 
-.details-sample-02 .details-wrap > :not([hidden]) ~ :not([hidden]) {
+.details-sample-02 .details-wrap {
+    margin-top: 2.5rem;
 	border-top-width: 1px;
     border-top-style: solid;
 	border-color: rgb(17 24 39 / 0.1);
 }
 
-.details-sample-02 .details-wrap {
-    margin-top: 2.5rem;
+.details-sample-02 .details-wrap > :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+    border-top-style: solid;
+	border-color: rgb(17 24 39 / 0.1);
 }
 
 .details-sample-02 details {
@@ -172,14 +169,14 @@ const css = `/*---
 <Code html={html} css={css} />
 <style>
     .details-sample-02 {
-        @apply mx-auto max-w-5xl divide-y divide-gray-900/10;
+        @apply mx-auto max-w-5xl;
 
         .details-sample-header {
             @apply text-2xl font-bold text-gray-900;
         }
 
         .details-wrap {
-            @apply mt-10 divide-y divide-gray-900/10;
+            @apply mt-10 divide-y divide-gray-900/10 border-t border-gray-900/10;
         }
 
         details {
