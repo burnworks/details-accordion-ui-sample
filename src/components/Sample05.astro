@@ -170,7 +170,7 @@ const html = `<div class="details-sample-05">
     <h2 class="details-sample-header">サンプル 05</h2>
     <div class="details-wrap">
         <!--↓ここからがひとつのブロック↓-->
-        <details name="sample-05">
+        <details>
             <summary>
                 <span class="summary-text">
                     サービス案内
@@ -383,7 +383,7 @@ const css = `/*---
             <h2 class="details-sample-header">サンプル 05 （多階層メニュー的なもの）</h2>
             <div class="details-wrap">
                 {details.map((details) => (
-                    <details name="sample-05">
+                    <details>
                         <summary>
                             <span class="summary-text">
                                 {details.title}    
