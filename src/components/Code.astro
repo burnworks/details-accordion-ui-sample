@@ -11,13 +11,13 @@ const { html , css } = Astro.props;
     <details>
         <summary class="py-4 font-bold text-lg">HTML</summary>
         <div class="prose max-w-none">
-            <pre tabindex="0" class="lang-html prettyprint linenums"><code set:text={html} /></pre>
+            <pre tabindex="0" class="language-html"><code set:text={html} /></pre>
         </div>
     </details>
     <details>
         <summary class="py-4 font-bold text-lg">CSS</summary>
         <div class="prose max-w-none">
-            <pre tabindex="0" class="lang-css prettyprint linenums"><code set:text={css} /></pre>
+            <pre tabindex="0" class="language-css"><code set:text={css} /></pre>
         </div>
     </details>
 </div>
