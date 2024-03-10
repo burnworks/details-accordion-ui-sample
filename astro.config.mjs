@@ -7,5 +7,11 @@ export default defineConfig({
   site: 'https://burnworks.github.io',
   base: '/details-accordion-ui-sample',
   trailingSlash: "always",
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  compressHTML: true,
+  vite: {
+    build: {
+      minify: false,
+    },
+  },
 });
