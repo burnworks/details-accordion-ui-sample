@@ -18,12 +18,12 @@ const { title , description } = Astro.props;
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css" rel="stylesheet" />
 	</head>
 	<body class="font-body flex flex-col min-h-dvh text-gray-900">
 		<slot />
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/a11y-dark.min.js"></script>
+		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/css.min.js"></script>
 		<script is:inline>hljs.highlightAll();</script>  	
 	</body>
 </html>
